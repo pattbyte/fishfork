@@ -17,18 +17,18 @@ while True:
     if rdn < 5:
       print("\033[33m[???]: 0.0005%\033[0m")
     elif rdn < 10:
-      print("[Mythic]: 0.001%")
+      print("\033[31m[Mythic]: 0.001%\033[0m")
     elif rdn < 100:
-      print("[Incredible]: 0.01%")
+      print("\033[35m[Incredible]: 0.01%\033[0m")
     elif rdn < 1000:
-      print("[Gem]: 0.1%")
+      print("\033[32m[Gem]: 0.1%\033[0m")
     elif rdn < 10000:
-      print("[Rare]: 1%")
+      print("\033[34m[Rare]: 1%\033[0m")
     elif rdn < 100000:
-      print("[Uncommon]: 10%")
+      print("\033[36m[Uncommon]: 10%\033[0m")
     elif rdn < 500000:
-      print("[Common]: 50%")
+      print("\033[90m[Common]: 50%\033[0m")
     elif rdn < 750000:
-      print("[Basic]: 75%")
+      print("\033[37m[Basic]: 75%\033[0m")
     elif rdn < 999999:
-      print("[Dogwater] : 99.9%")
+      print("\033[37m[Dogwater] : 99.9%\033[0m")
