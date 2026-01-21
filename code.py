@@ -4,17 +4,18 @@ import time
 print("CRNG v1.0")
 time.sleep(0.5)
 print("by pattbyte")
-time.sleep(1)
+time.sleep(1.25)
 print()
 print("Welcome to CRNG!")
-time.sleep(0.25)
+time.sleep(1)
 print("Press [enter] to start rolling!")
 while True:
   roll = input()
   if roll == "":
+    time.sleep(0.1)
     rdn = random.randint(1,1000000)
     if rdn < 5:
-      print("[???]: 0.0005%")
+      print("\033[33m[???]: 0.0005%\033[0m")
     elif rdn < 10:
       print("[Mythic]: 0.001%")
     elif rdn < 100:
