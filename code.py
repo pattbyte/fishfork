@@ -1,15 +1,16 @@
 import random
 import time
 
-print("\033[33mCRNG v1.0\033[0m")
+print("\033[36mCRNG v1.0\033[0m")
 time.sleep(0.5)
 print("by pattbyte")
 time.sleep(1.25)
 print()
-print("Welcome to CRNG!")
+print("\033[32mWelcome to CRNG!\033[0m")
 time.sleep(1)
 print("Press [enter] to start rolling!")
 print("> Use 'stats' for your statistics.")
+print()
 roll_counter=0
 while True:
   roll = input()
