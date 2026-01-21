@@ -1,7 +1,7 @@
 import random
 import time
 
-print("CRNG v1.0")
+print("\033[33mCRNG v1.0\033[0m")
 time.sleep(0.5)
 print("by pattbyte")
 time.sleep(1.25)
@@ -9,9 +9,12 @@ print()
 print("Welcome to CRNG!")
 time.sleep(1)
 print("Press [enter] to start rolling!")
+print("> Use 'stats' for your statistics.")
+roll_counter=0
 while True:
   roll = input()
   if roll == "":
+    roll_counter+=1
     time.sleep(0.1)
     rdn = random.randint(1,1000000)
     if rdn < 5:
@@ -32,3 +35,7 @@ while True:
       print("\033[37m[Basic]: 75%\033[0m")
     elif rdn < 999999:
       print("\033[37m[Dogwater] : 99.9%\033[0m")
+  elif roll == "stats":
+    print()
+    print("\033[37m> STATS\033[0m")
+    print(f"Rolls: {roll_counter}")
