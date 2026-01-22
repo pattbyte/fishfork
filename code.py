@@ -11,14 +11,14 @@ time.sleep(1)
 print("Press [enter] to start rolling!")
 print("> Use 'stats' for your statistics.")
 print()
-roll_counter=0
 while True:
   roll = input()
   if roll == "":
     roll_counter+=1
     rf = open("CRNG_rolls.txt","w")
     rf.write(f"{roll_counter}")
-    rf.close()
+    rfread = open("CRNG_rolls.txt","r")
+    rc = rfread.read()
     time.sleep(0.1)
     rdn = random.randint(1,1000000)
     if rdn < 5:
@@ -42,4 +42,4 @@ while True:
   elif roll == "stats":
     print()
     print("\033[37m> STATS\033[0m")
-    print(f"Rolls: {roll_counter}")
+    print("Rolls:",rc)
