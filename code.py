@@ -1,7 +1,12 @@
 import random
 import time
 
-roll_counter=0
+try:
+  with open("CRNG_rolls","r") as y:
+    roll_counter=int(y.read())
+except FileNotFoundError:
+  roll_counter=0
+  
 print("\033[36mCRNG v1.0\033[0m")
 time.sleep(0.5)
 print("by pattbyte")
@@ -43,4 +48,4 @@ while True:
   elif roll == "stats":
     print()
     print("\033[37m> STATS\033[0m")
-    print("Rolls:",rc)
+    print("Rolls:",roll_counter)
