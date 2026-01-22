@@ -17,7 +17,7 @@ while True:
   if roll == "":
     roll_counter+=1
     rf = open("CRNG_rolls.txt","w")
-    rf.write(roll_counter)
+    rf.write(f"{roll_counter}")
     rf.close()
     time.sleep(0.1)
     rdn = random.randint(1,1000000)
