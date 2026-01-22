@@ -1,6 +1,7 @@
 import random
 import time
 
+roll_counter=0
 print("\033[36mCRNG v1.0\033[0m")
 time.sleep(0.5)
 print("by pattbyte")
